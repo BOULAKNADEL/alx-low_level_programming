@@ -17,9 +17,9 @@ int main(void)
 		if (num != 57)
 		{
 			putchar(',');
-            putchar(' ');
+			putchar(' ');
 		}
-	    num++;
+		num++;
 	}
 	putchar('\n');
 	return (0);
