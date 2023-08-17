@@ -7,13 +7,13 @@
 */
 void print_numbers(void)
 {
-	int count;
+	int num;
 
-	for (count = 0; count <= 9; count++)
+	for (num = 0; num <= 9; ++num)
 	{
-		if (count == 2 || count == 4)
-		continue;
-	_putchar(count + '0');
+		if (num == 2 || num == 4)
+			continue;
+		_putchar(num + 48);
 	}
 	_putchar('\n');
 }
