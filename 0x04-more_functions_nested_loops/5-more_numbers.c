@@ -2,7 +2,7 @@
 
 /**
  * more_numbers - print numbers 10 times from 0 to 14
- * 
+ *
  * Return: void
  */
 
