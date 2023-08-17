@@ -14,7 +14,7 @@ void print_most_numbers(void)
 	{
 		for (count = 0; count <= 13; count++)
 		{
-			if (cout >= 9)
+			if (cout > 9)
 			{
 				_putchar('1');
 				_putchar(count % 10 + '0');
