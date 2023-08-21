@@ -5,17 +5,15 @@
  *
  * @str: string parameter to print
  *
- * Return: no return (void)
+ * Return: it's void
 */
 
 void _puts(char *str)
 {
-	int i;
-
-    for (i = 0; *str != '\0'; *str++)
-    {
-        _putchar(*str + '0');
-        i++;
-    }
-    _putchar('\n');
+	while (*str != '\0')
+	{
+		_putchar(*str + 0);
+		++str;
+	}
+	_putchar('\n');
 }
