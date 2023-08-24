@@ -10,12 +10,18 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int dest_len = strlen(dest);
+	char *cp = dest;
 
+	/* Move pointer to end of destination string */
+	while (*cp != '\0')
+		cp++;
+
+	/* Copy characters from source string to end of destination string */
 	while (*src != '\0')
-		dest[dest_len++] = *src++;
+		*cp++ = *src++;
 
-	dest[dest_len] = '\0';
+	/* Add null terminator to end of destination string */
+	*cp = '\0';
 
 	return (dest);
 }
