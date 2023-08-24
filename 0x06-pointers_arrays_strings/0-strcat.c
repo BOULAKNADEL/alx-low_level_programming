@@ -8,20 +8,15 @@
  *
  * Return: dest
  */
-
 char *_strcat(char *dest, char *src)
 {
+    int dest_len = strlen(dest);
 
-	/* Move pointer to end of destination string */
-	while (*cp != '\0')
-		dest++;
+    while (*src != '\0')
+        dest[dest_len++] = *src++;
 
-	/* Copy characters from source string to end of destination string */
-	while (*src != '\0')
-		*dest++ = *src++;
+    dest[dest_len] = '\0';
 
-	/* Add null terminator to end of destination string */
-	*dest = '\0';
-
-	return (dest);
+    return dest;
 }
+
