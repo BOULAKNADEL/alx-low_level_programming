@@ -18,7 +18,6 @@ unsigned int _strspn(char *s, char *accept)
 	for (stringIndex = 0; s[stringIndex] != '\0'; stringIndex++)
 	{
 		if (s[stringIndex] != ' ')
-
 		{  /* Changed 32 to ' ' for better clarity */
 			for (acceptIndex = 0; accept[acceptIndex] != '\0'; acceptIndex++)
 			{
