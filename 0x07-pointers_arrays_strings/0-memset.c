@@ -14,7 +14,7 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	int counter = 0;
+	unsigned int counter = 0; /** because we have an unsigned value of n */
 
 	for (counter = 0; counter < n; counter++)
 	{
