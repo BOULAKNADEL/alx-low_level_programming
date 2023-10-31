@@ -12,25 +12,25 @@
 
 char *_strdup(char *str)
 {
-    char *s;
-    int i, lengo = 0;
+	char *s;
+	int i, lengo = 0;
 
-    if (str == NULL)
-        return (NULL);
+	if (str == NULL)
+		return (NULL);
 
-    while (str[lengo])
-        lengo++;
+	while (str[lengo])
+		lengo++;
 
-    s = malloc(sizeof(char) * (lengo + 1));
+	s = malloc(sizeof(char) * (lengo + 1));
 
-    if (s == NULL)
-        return (NULL);
+	if (s == NULL)
+		return (NULL);
 
-    for (i = 0; i < lengo; i++)
-        s[i] = str[i];
+	for (i = 0; i < lengo; i++)
+		s[i] = str[i];
 
-    s[lengo] = '\0';
+	s[lengo] = '\0';
 
-    return (s);
+	return (s);
 }
 
